@@ -1,0 +1,17 @@
+Setup instructions:
+Java 8 installed
+JAVA_HOME environment variable set
+${JAVA_HOME}/bin needs to be part of ${PATH}
+
+Command to start application:
+./gradlew bootRun
+runs on localhost port 8080
+
+Command to run unit tests:
+./gradlew test
+
+
+
+example curl command:
+curl localhost:8080
+curl -H "Accept: application/json" localhost:8080
