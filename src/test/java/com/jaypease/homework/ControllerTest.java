@@ -1,6 +1,6 @@
-package com.jaypease.homework.test;
+package com.jaypease.homework;
 
-import com.jaypease.homework.Application;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
