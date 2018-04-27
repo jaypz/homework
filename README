@@ -15,3 +15,8 @@ Command to run unit tests:
 example curl command:
 curl localhost:8080
 curl -H "Accept: application/json" localhost:8080
+
+example debug log output
+15:18:52.948 [QUIET] [system.out] 2018-04-27 15:18:52.948 DEBUG 6311 --- [nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/;client=127.0.0.1;headers={host=[localhost:8080], user-agent=[curl/7.54.0], accept=[application/json]}]
+15:18:52.964 [QUIET] [system.out] 2018-04-27 15:18:52.965 DEBUG 6311 --- [nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [uri=/;client=127.0.0.1;headers={host=[localhost:8080], user-agent=[curl/7.54.0], accept=[application/json]}]
+spring can modify requests, we are not doing it in this case but it is displayed twice due to this
